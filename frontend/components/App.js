@@ -19,9 +19,13 @@ const initialState = {
   displayCompleteds: true,
 }
 
+function reducer() {
+  return initialState
+}
+
 export default function App() {
 
-  const [state, dispatch] = useReducer() // 1st function ---> state, 2nd object with our initial satte
+  const [state, dispatch] = useReducer(reducer) // 1st function ---> state, 2nd object with our initial satte
 
   const onChange = ({ name, value }) => {
 
