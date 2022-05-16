@@ -19,7 +19,7 @@ const initialState = {
   displayCompleteds: true,
 }
 
-function reducer() {
+function reducer() { // declared a reducer
   return initialState
 }
 
