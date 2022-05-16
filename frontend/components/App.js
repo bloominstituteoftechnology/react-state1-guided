@@ -12,6 +12,7 @@ const initialTodos = [
 ]
 const initialForm = {
   name: '',
+  foo
 }
 const initialState = {
   form: initialForm,
