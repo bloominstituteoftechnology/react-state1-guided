@@ -36,6 +36,9 @@ function reducer(state, action) { // action might be { type: INPUT_CHANGE, paylo
     const { name, value } = action.payload
     return { ...state, form: { ...state.form, [name]: value } }
   }
+  if (action.type === ADD_TODO) {
+    // 2- make the state change for this action type
+  }
   return state
 }
 
@@ -46,7 +49,7 @@ export default function App() {
     dispatch({ type: INPUT_CHANGE, payload: { name, value } }) // the ACTION object has a type and optional payload
   }
   const onSubmit = () => {
-    dispatch({})
+    dispatch({ type: })
   }
   const toggleShouldShow = () => {
 
