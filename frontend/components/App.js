@@ -38,7 +38,7 @@ export default function App() {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   const onChange = ({ name, value }) => {
-    dispatch({ type: INPUT_CHANGE, payload: value }) // the ACTION object has a type and optional payload
+    dispatch({ type: INPUT_CHANGE, payload: { name, value } }) // the ACTION object has a type and optional payload
   }
   const onSubmit = () => {
 
