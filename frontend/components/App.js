@@ -30,10 +30,10 @@ const TOGGLE_DISPLAY_COMPLETEDS = 'TOGGLE_DISPLAY_COMPLETEDS'
 // NOT used inside components, handlers etc.
 // The framework just wants us to centralize
 // state-changing logic inside a single function.
-function reducer(state, action) { // { type: INPUT_CHANGE, payload: { name, value } }
+function reducer(state, action) { // action might be { type: INPUT_CHANGE, payload: { name, value } }
   if (action.type === INPUT_CHANGE) {
     // RETURN NEW STATE
-
+    return { ...state, form }
   }
   return state
 }
