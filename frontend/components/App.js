@@ -38,11 +38,7 @@ function reducer(state, action) { // action might be { type: INPUT_CHANGE, paylo
   }
   if (action.type === ADD_TODO) {
     return {
-      ...state, todos: state.todos.concat({
-        id: getId(),
-        completed: false,
-        name: state.form.name,
-      })
+      ...state, todos: state.todos.concat(payload)
     }
   }
   return state
@@ -56,7 +52,7 @@ export default function App() {
   }
   const onSubmit = () => {
     const newTodo = { id: getId(), completed: false, name: state.form.name }
-    dispatch({ type: ADD_TODO })
+    dispatch({ type: ADD_TODO, payload: newTodo })
   }
   const toggleShouldShow = () => {
 
