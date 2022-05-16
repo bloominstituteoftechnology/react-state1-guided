@@ -1,35 +1,22 @@
-# Advanced State Management Guided Project
-
-## Introduction
-
-In this project you will build an application that allows for todos to be added, completed and removed from view. This application should:
-
-- Use [this gif](./todo.gif) as inspiration for building the DOM
-- Try out [this prototype](https://advanced-react-todos-ajax.herokuapp.com/)
-- Allow for a todo's `completed` status to be toggled back and forth when clicking on a todo
-- Allow for a todo to be added when submitting the new todo form
-- Allow for completed todos to be filtered out of view when clicking the clear completed button
-
-## Tools
+# Advanced State Management Guided Project PART 1
 
 - Node 16.x
 - NPM 8.x (update NPM executing `npm i -g npm`)
 - Postman (download the desktop version [here](https://www.postman.com/downloads/))
-- Chrome >= 96.x
+- Chrome >= 100.x
 
 Other browser/Node/NPM configurations might work but haven't been tested.
 
 ## Project Set Up
 
-- Fork, clone, and `npm install`.
+- Clone and `npm install`. DO NOT FORK! (Or the "ketchup" script won't work.)
 - Launch the project on a development server executing `npm run dev`.
 - Visit your app by navigating to `http://localhost:3000` with Chrome.
+- Reset to the instructor's remote branch executing `npm run ketchup`.
 
-## Project Instructions
+## API Endpoints
 
-### API Endpoints
-
-The following endpoints exist in this project and should be explored with Postman prior to coding:
+The following endpoints exist in this project:
 
 - `GET http://localhost:9000/api/todos`
   1. Expects no payload
@@ -48,15 +35,3 @@ The API will make other responses if the requests are defective:
 
 - `422 Unprocessable Entity` when a required payload is missing or incorrect
 - `404 Not Found` when the requested todo does not exist, or when the URL is incorrect
-
-### React Components
-
-- Your app should display a list of todos, an input field, a submit button, and a button to filter out completed todos
-- `<App />` will hold all of the state machinery:
-  - Application state, held in component state
-  - State-changing methods, event handlers
-- `<TodoList />` receives your todos array and iterates over the list generating a new `<Todo />` for each element in the array
-- `<Todo />` is a component that takes in the `todo` data and displays the task to the screen
-- `<Form />` will hold your input field and your `Add Todo` and `Clear Completed` buttons
-  - Your input field should take in user input, and allow a user to press `Enter` or click on the `Submit Button` to add a todo to your list
-  - Once a todo is submitted, the Todo List should re-render and show the added todo
