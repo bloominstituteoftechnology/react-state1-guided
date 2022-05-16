@@ -12,7 +12,6 @@ const initialTodos = [
 ]
 const initialForm = {
   name: '',
-  foo: '',
 }
 const initialState = {
   form: initialForm,
@@ -33,9 +32,8 @@ const TOGGLE_DISPLAY_COMPLETEDS = 'TOGGLE_DISPLAY_COMPLETEDS'
 // state-changing logic inside a single function.
 function reducer(state, action) { // action might be { type: INPUT_CHANGE, payload: { name, value } }
   if (action.type === INPUT_CHANGE) {
-    // RETURN NEW STATE
-    const { name, value } = action.payload
-    return { ...state, form: { ...state.form, [name]: value } }
+    const { value } = action.payload
+    return { ...state, form: { name: value } }
   }
   return state
 }
