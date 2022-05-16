@@ -37,10 +37,13 @@ function reducer(state, action) { // action might be { type: INPUT_CHANGE, paylo
     return { ...state, form: { ...state.form, [name]: value } }
   }
   if (action.type === ADD_TODO) {
-    return { ...state, todos: state.todos.concat({
-      id: getId(),
-      
-    }) }
+    return {
+      ...state, todos: state.todos.concat({
+        id: getId(),
+        completed: false,
+        name: state.form.name,
+      })
+    }
   }
   return state
 }
