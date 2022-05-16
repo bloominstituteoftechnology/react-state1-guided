@@ -49,7 +49,7 @@ export default function App() {
     dispatch({ type: INPUT_CHANGE, payload: { name, value } }) // the ACTION object has a type and optional payload
   }
   const onSubmit = () => {
-    dispatch({ type: })
+    dispatch({ type: ADD_TODO })
   }
   const toggleShouldShow = () => {
 
