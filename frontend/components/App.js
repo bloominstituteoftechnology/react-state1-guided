@@ -45,6 +45,9 @@ function reducer(state, action) { // action might be { type: INPUT_CHANGE, paylo
       form: initialForm,
     }
   }
+  if (action.type === TOGGLE_DISPLAY_COMPLETEDS) {
+    return { }
+  }
   return state
 }
 
@@ -59,7 +62,6 @@ export default function App() {
     dispatch({ type: ADD_TODO, payload: newTodo })
   }
   const toggleShouldShow = () => {
-    debugger
     dispatch({ type: TOGGLE_DISPLAY_COMPLETEDS })
   }
   const toggleStatus = id => () => {
