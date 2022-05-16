@@ -34,7 +34,7 @@ const TOGGLE_DISPLAY_COMPLETEDS = 'TOGGLE_DISPLAY_COMPLETEDS'
 function reducer(state, action) { // action might be { type: INPUT_CHANGE, payload: { name, value } }
   if (action.type === INPUT_CHANGE) {
     // RETURN NEW STATE
-    return { ...state, form: { ...state.form, [payload]: '' } }
+    return { ...state, form: { ...state.form, [action.payload]: '' } }
   }
   return state
 }
