@@ -56,7 +56,9 @@ function reducer(state, action) { // action might be { type: INPUT_CHANGE, paylo
       return (todo.id === id) ? { ...todo, completed: !todo.completed } : todo
     })}
   }
-  if (action.type === inc)
+  if (action.type === INC) {
+    return { ...state, count: state.count + 1 }
+  }
   return state
 }
 
