@@ -50,10 +50,7 @@ function reducer(state, action) { // action might be { type: INPUT_CHANGE, paylo
   }
   if (action.type === TOGGLE_COMPLETED) {
     const id = action.payload
-    debugger
-    if (id === state.todos.id) {
-
-    }
+    
   }
   return state
 }
