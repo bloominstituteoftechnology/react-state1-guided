@@ -19,6 +19,8 @@ const initialState = {
   displayCompleteds: true,
 }
 
+const TOGGLE_COMPLETED = 'TOGGLE_COMPLETED'
+
 // TAKES current state and an action
 // and returns new (or the same) state.
 // NOT used inside components, handlers etc.
