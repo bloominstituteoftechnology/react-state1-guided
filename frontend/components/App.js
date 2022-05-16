@@ -40,7 +40,7 @@ function reducer(state, action) { // action might be { type: INPUT_CHANGE, paylo
     return {
       ...state,
       todos: state.todos.concat(action.payload),
-      form: ''
+      form: initialForm,
     }
   }
   return state
