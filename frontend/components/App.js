@@ -12,6 +12,7 @@ const initialTodos = [
 ]
 const initialForm = {
   name: '',
+  foo: '',
 }
 const initialState = {
   form: initialForm,
@@ -33,7 +34,7 @@ const TOGGLE_DISPLAY_COMPLETEDS = 'TOGGLE_DISPLAY_COMPLETEDS'
 function reducer(state, action) { // action might be { type: INPUT_CHANGE, payload: { name, value } }
   if (action.type === INPUT_CHANGE) {
     // RETURN NEW STATE
-    return { ...state, form }
+    return { ...state, form: {} }
   }
   return state
 }
