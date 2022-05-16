@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react'
+import React, { useReducer } from 'react' // imported the reducer hook
 import Form from './Form'
 import TodoList from './TodoList'
 
@@ -25,7 +25,7 @@ function reducer() {
 
 export default function App() {
 
-  const [state, dispatch] = useReducer(reducer) // 1st function ---> state, 2nd object with our initial satte
+  const [state, dispatch] = useReducer(reducer, initialState) // 1st function ---> state, 2nd object with our initial satte
 
   const onChange = ({ name, value }) => {
 
