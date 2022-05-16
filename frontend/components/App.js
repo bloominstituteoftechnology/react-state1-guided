@@ -20,13 +20,12 @@ const initialState = {
 }
 
 // REDUCER
-function reducer(state, action) { // takes current state, an action and returns new state
+function reducer(state, action) {
   return state
 }
 
 export default function App() {
-
-  const [state, dispatch] = useReducer(reducer, initialState) // 1st function ---> state, 2nd object with our initial satte
+  const [state, dispatch] = useReducer(reducer, initialState)
 
   const onChange = ({ name, value }) => {
 
