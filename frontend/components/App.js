@@ -46,7 +46,7 @@ function reducer(state, action) { // action might be { type: INPUT_CHANGE, paylo
     }
   }
   if (action.type === TOGGLE_DISPLAY_COMPLETEDS) {
-    return { }
+    return { ...state, }
   }
   return state
 }
