@@ -19,8 +19,9 @@ const initialState = {
   displayCompleteds: true,
 }
 
-function reducer(state) { // takes current state, an action and returns new state
-  return initialState
+// REDUCER
+function reducer(state, action) { // takes current state, an action and returns new state
+  return state
 }
 
 export default function App() {
