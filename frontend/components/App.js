@@ -19,7 +19,9 @@ const initialState = {
   displayCompleteds: true,
 }
 
-// REDUCER
+// TAKES current state and an action
+// and returns new state.
+// NOT used inside components, handlers etc
 function reducer(state, action) {
   return state
 }
