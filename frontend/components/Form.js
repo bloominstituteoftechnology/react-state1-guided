@@ -1,21 +1,27 @@
 import React from 'react'
 
 export default class Form extends React.Component {
+  onChange = evt => {
+    const { name, value } = evt.target
+    this.props.onChange({ name, value })
+  }
+  onSubmit = evt => {
+    evt.preventDefault()
+    this.props.onSubmit()
+  }
   render() {
     const {
       values,
-      onSubmit,
-      onChange,
       toggleShouldShow,
       displayCompleteds,
       disabled,
     } = this.props
     return (
       <>
-        <form id="todoForm" onSubmit={onSubmit}>
+        <form id="todoForm" onSubmit={this.onSubmit}>
           <input
+            onChange={this.onChange}
             value={values.name}
-            onChange={onChange}
             placeholder="Type todo"
             name="name"
             type="text"

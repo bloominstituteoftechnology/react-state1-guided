@@ -10,11 +10,9 @@ const initialTodos = [
   { id: getId(), name: "Learn React", completed: true },
   { id: getId(), name: "Have fun", completed: false },
 ]
-
 const initialForm = {
   name: '',
 }
-
 const initialState = {
   form: initialForm,
   todos: initialTodos,
@@ -24,12 +22,10 @@ const initialState = {
 export default function App() {
   const [state, setState] = useState(initialState)
 
-  const onChange = evt => {
-    const { name, value } = evt.target
+  const onChange = ({ name, value }) => {
     setState({ ...state, form: { [name]: value } })
   }
-  const onSubmit = evt => {
-    evt.preventDefault()
+  const onSubmit = () => {
     setState({
       ...state,
       form: initialForm,
