@@ -23,34 +23,16 @@ export default function App() {
   const [state, setState] = useState(initialState)
 
   const onChange = ({ name, value }) => {
-    setState({ ...state, form: { [name]: value } })
+
   }
   const onSubmit = () => {
-    setState({
-      ...state,
-      form: initialForm,
-      todos: state.todos.concat({
-        id: getId(),
-        name: state.form.name,
-        completed: false,
-      }),
-    })
+
   }
   const toggleShouldShow = () => {
-    setState({
-      ...state,
-      displayCompleteds: !state.displayCompleteds
-    })
+
   }
   const toggleStatus = id => () => {
-    setState({
-      ...state,
-      todos: state.todos.map(td => {
-        return td.id == id
-          ? { ...td, completed: !td.completed }
-          : td
-      })
-    })
+
   }
   return (
     <div>
