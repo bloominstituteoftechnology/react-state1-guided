@@ -20,6 +20,7 @@ const initialState = {
 }
 
 const INPUT_CHANGE = 'INPUT_CHANGE'
+const ADD_TODO = 'ADD_TODO'
 const TOGGLE_COMPLETED = 'TOGGLE_COMPLETED'
 
 // TAKES current state and an action
