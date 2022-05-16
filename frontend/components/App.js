@@ -38,7 +38,7 @@ function reducer(state, action) { // action might be { type: INPUT_CHANGE, paylo
   }
   if (action.type === ADD_TODO) {
     return {
-      ...state, todos: state.todos.concat(action.payload)
+      ...state, todos: state.todos.concat(action.payload), form: 
     }
   }
   return state
