@@ -37,7 +37,7 @@ function reducer(state, action) { // action might be { type: INPUT_CHANGE, paylo
     return { ...state, form: { ...state.form, [name]: value } }
   }
   if (action.type === ADD_TODO) {
-    return { }
+    return { ...state, }
   }
   return state
 }
