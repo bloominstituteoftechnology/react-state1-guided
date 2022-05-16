@@ -56,6 +56,7 @@ function reducer(state, action) { // action might be { type: INPUT_CHANGE, paylo
       return (todo.id === id) ? { ...todo, completed: !todo.completed } : todo
     })}
   }
+  if (action.type === inc)
   return state
 }
 
@@ -77,7 +78,7 @@ export default function App() {
   }
   return (
     <div>
-      <h1 onClick={() => dispatch({ type: IN})}>Todo App {state.count}</h1>
+      <h1 onClick={() => dispatch({ type: INC })}>Todo App {state.count}</h1>
       <TodoList
         todos={state.todos}
         displayCompleteds={state.displayCompleteds}
