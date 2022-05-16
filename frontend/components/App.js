@@ -65,7 +65,7 @@ export default function App() {
     dispatch({ type: TOGGLE_DISPLAY_COMPLETEDS })
   }
   const toggleStatus = id => () => {
-    dispatch({ type: TOGGLE_COMPLETED })
+    dispatch({ type: TOGGLE_COMPLETED, payload: id })
   }
   return (
     <div>
