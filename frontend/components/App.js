@@ -20,7 +20,7 @@ const initialState = {
   displayCompleteds: true,
 }
 
-// TYPES OF ACTION 'ACTION TYPES'
+// 1- TYPES OF ACTION 'ACTION TYPES'
 const INPUT_CHANGE = 'INPUT_CHANGE'
 const ADD_TODO = 'ADD_TODO'
 const TOGGLE_COMPLETED = 'TOGGLE_COMPLETED'
@@ -46,7 +46,7 @@ export default function App() {
     dispatch({ type: INPUT_CHANGE, payload: { name, value } }) // the ACTION object has a type and optional payload
   }
   const onSubmit = () => {
-
+    dispatch({})
   }
   const toggleShouldShow = () => {
 
