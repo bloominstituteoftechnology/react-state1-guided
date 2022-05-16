@@ -19,7 +19,7 @@ const initialState = {
   displayCompleteds: true,
 }
 
-function reducer() { // declared a reducer
+function reducer(state) { // takes current state, an action and returns new state
   return initialState
 }
 
