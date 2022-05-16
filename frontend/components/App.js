@@ -32,7 +32,6 @@ const TOGGLE_DISPLAY_COMPLETEDS = 'TOGGLE_DISPLAY_COMPLETEDS'
 // The framework just wants us to centralize
 // state-changing logic inside a single function.
 function reducer(state, action) { // action might be { type: INPUT_CHANGE, payload: { name, value } }
-  debugger
   if (action.type === INPUT_CHANGE) {
     // RETURN NEW STATE
     const { name, value } = action.payload
