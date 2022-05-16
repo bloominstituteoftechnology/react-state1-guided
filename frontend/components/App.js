@@ -58,6 +58,7 @@ export default function App() {
   }
   return (
     <div>
+      <h1>Todo App</h1>
       <TodoList
         todos={state.todos}
         displayCompleteds={state.displayCompleteds}
