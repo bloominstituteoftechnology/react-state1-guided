@@ -40,8 +40,8 @@ function reducer(state, action) { // action might be { type: INPUT_CHANGE, paylo
     const newTodo = action.payload
     return {
       ...state,
-      // todos: state.todos.concat(action.payload),
-      todos: [...state.todos, action.payload],
+      // todos: state.todos.concat(newTodo),
+      todos: [...state.todos, newTodo],
       form: initialForm,
     }
   }
