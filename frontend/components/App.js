@@ -55,6 +55,7 @@ export default function App() {
     dispatch({ type: INPUT_CHANGE, payload: { name, value } }) // the ACTION object has a type and optional payload
   }
   const onSubmit = () => {
+    debugger
     const newTodo = { id: getId(), completed: false, name: state.form.name }
     dispatch({ type: ADD_TODO, payload: newTodo })
   }
