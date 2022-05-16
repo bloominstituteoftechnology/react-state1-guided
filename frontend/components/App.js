@@ -19,6 +19,7 @@ const initialState = {
   displayCompleteds: true,
 }
 
+const INPUT_CHANGE = 'INPUT_CHANGE'
 const TOGGLE_COMPLETED = 'TOGGLE_COMPLETED'
 
 // TAKES current state and an action
