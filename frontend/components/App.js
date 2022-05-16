@@ -20,7 +20,7 @@ const initialState = {
 }
 
 // TAKES current state and an action
-// and returns new state.
+// and returns new (or the same) state.
 // NOT used inside components, handlers etc.
 // The framework just wants us to centralize
 // state-changing logic inside a single function.
