@@ -21,7 +21,7 @@ const initialState = {
 
 export default function App() {
 
-  const [state, dispatch] = useReducer() // 1st state
+  const [state, dispatch] = useReducer() // 1st function ---> state, 2nd object with our initial satte
 
   const onChange = ({ name, value }) => {
 
