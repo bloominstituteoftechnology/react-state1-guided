@@ -77,7 +77,7 @@ export default function App() {
   }
   return (
     <div>
-      <h1>Todo App {state.count}</h1>
+      <h1 onClick={() => dispatch({ type: IN})}>Todo App {state.count}</h1>
       <TodoList
         todos={state.todos}
         displayCompleteds={state.displayCompleteds}
