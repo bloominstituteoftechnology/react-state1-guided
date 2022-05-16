@@ -49,7 +49,6 @@ function reducer(state, action) { // action might be { type: INPUT_CHANGE, paylo
     return { ...state, displayCompleteds: !state.displayCompleteds }
   }
   if (action.type === TOGGLE_COMPLETED) {
-    debugger
     const id = action.payload
     return { ...state, todos: state.todos.map(todo => {
       return (todo.id === id) ? { ...todo, completed: !todo.completed } : todo
