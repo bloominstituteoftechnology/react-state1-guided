@@ -19,6 +19,7 @@ const initialState = {
   displayCompleteds: true,
 }
 
+// TYPES OF ACTION 'ACTION TYPES'
 const INPUT_CHANGE = 'INPUT_CHANGE'
 const ADD_TODO = 'ADD_TODO'
 const TOGGLE_COMPLETED = 'TOGGLE_COMPLETED'
@@ -37,7 +38,7 @@ export default function App() {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   const onChange = ({ name, value }) => {
-
+    return {  } // the ACTION
   }
   const onSubmit = () => {
 
