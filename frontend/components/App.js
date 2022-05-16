@@ -65,7 +65,7 @@ export default function App() {
     dispatch({ type: TOGGLE_DISPLAY_COMPLETEDS })
   }
   const toggleStatus = id => () => {
-
+    // screeammmmm
   }
   return (
     <div>
