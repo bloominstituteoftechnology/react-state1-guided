@@ -18,6 +18,7 @@ const initialState = {
   form: initialForm,
   todos: initialTodos,
   displayCompleteds: true,
+  count : 0
 }
 
 // 1- TYPES OF ACTION 'ACTION TYPES'
@@ -25,6 +26,7 @@ const INPUT_CHANGE = 'INPUT_CHANGE'
 const ADD_TODO = 'ADD_TODO'
 const TOGGLE_COMPLETED = 'TOGGLE_COMPLETED'
 const TOGGLE_DISPLAY_COMPLETEDS = 'TOGGLE_DISPLAY_COMPLETEDS'
+const INC = 'INC'
 
 // TAKES current state and an action
 // and returns new (or the same) state.
@@ -75,7 +77,7 @@ export default function App() {
   }
   return (
     <div>
-      <h1>Todo App</h1>
+      <h1>Todo App {state.count}</h1>
       <TodoList
         todos={state.todos}
         displayCompleteds={state.displayCompleteds}
