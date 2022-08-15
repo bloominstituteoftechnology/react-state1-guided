@@ -2,7 +2,6 @@ import React from 'react'
 
 export default class Form extends React.Component {
   onChange = evt => {
-    debugger
     const { name, value } = evt.target
     this.props.onChange({ name, value })
   }

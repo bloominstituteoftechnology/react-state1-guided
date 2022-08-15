@@ -30,7 +30,6 @@ const TOGGLE_COMPLETED = 'TOGGLE_COMPLETED'
 // an action is an obj that describes the change `{ type: 'CHANGE_INPUT', payload: { name, value } }`
 function reducer(state, action) { // what it takes as args
   if (action.type === CHANGE_INPUT) {
-    debugger
     const { name, value } = action.payload
     return { ...state, form: { ...state.form, [name]: value } }
   }
@@ -53,12 +52,11 @@ export default function App() {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   const onChange = ({ name, value }) => {
-    debugger
     const action = { type: CHANGE_INPUT, payload: { name, value } }
     dispatch(action)
   }
   const onSubmit = () => {
-
+    
   }
   const toggleShouldShow = () => {
 
