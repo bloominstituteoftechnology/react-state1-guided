@@ -27,8 +27,8 @@ const TOGGLE_DISPLAY_COMPLETEDS = 'TOGGLE_DISPLAY_COMPLETEDS'
 const TOGGLE_COMPLETED = 'TOGGLE_COMPLETED'
 
 // STATE RECALCULATOR (reducer)
-function reducer() {
-  
+function reducer() { // what it takes as args
+  // what it returns: the next state of the app
 }
 
 export default function App() {
