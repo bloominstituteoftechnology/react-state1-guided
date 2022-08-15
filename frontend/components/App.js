@@ -22,7 +22,7 @@ const initialState = { // the entire state of the app
 
 // good names
 const TOGGLE_COMPLETED = 'TOGGLE_COMPLETED'
-const 
+const TOGGLE_DISPLAY_COMPLETEDS = 'TOGGLE_DISPLAY_COMPLETEDS'
 
 export default function App() {
   const [state, setState] = useState(initialState)
