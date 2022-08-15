@@ -65,7 +65,7 @@ export default function App() {
     dispatch(action)
   }
   const toggleStatus = id => () => {
-    
+
   }
   return (
     <div>
