@@ -56,7 +56,7 @@ export default function App() {
     dispatch(action)
   }
   const onSubmit = () => {
-    
+    const newTodo = { id, name }
   }
   const toggleShouldShow = () => {
 
