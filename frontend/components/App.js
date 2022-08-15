@@ -32,7 +32,7 @@ function reducer(state, action) { // what it takes as args
   if (action.type === CHANGE_INPUT) {
     debugger
     const { name, value } = action.payload
-    return { ...state, form: { ...state.form, [] } }
+    return { ...state, form: { ...state.form, [name]: value } }
   }
   if (action.type === ADD_TODO) {
     // compute next state
