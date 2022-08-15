@@ -39,7 +39,7 @@ function reducer(state, action) { // what it takes as args
     // return { ...state, todos: state.todos.concat(newTodo), form: initialForm }
   }
   if (action.type === TOGGLE_DISPLAY_COMPLETEDS) {
-    return { ...state, }
+    return { ...state, displayCompleteds: !state.displayCompleteds }
   }
   if (action.type === TOGGLE_COMPLETED) {
     // compute next state
