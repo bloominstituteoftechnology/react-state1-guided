@@ -1,4 +1,4 @@
-import React, { useState, useReducer } from 'react'
+import React, { useReducer } from 'react'
 import Form from './Form'
 import TodoList from './TodoList'
 
@@ -11,7 +11,7 @@ const initialTodos = [
   { id: getId(), name: "Have fun", completed: false },
 ]
 const initialForm = {
-  todoName: 'sdfgfsdgg',
+  todoName: '',
   // assume there could be more inputs
 }
 const initialState = { // the entire state of the app
