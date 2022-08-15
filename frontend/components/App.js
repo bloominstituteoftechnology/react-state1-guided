@@ -62,7 +62,7 @@ export default function App() {
     dispatch(action)
   }
   const toggleShouldShow = () => {
-
+    const action = { type: TOGGLE_DISPLAY_COMPLETEDS }
   }
   const toggleStatus = id => () => {
 
