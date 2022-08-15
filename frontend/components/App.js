@@ -49,7 +49,7 @@ function reducer(state, action) { // what it takes as args
         if (td.id === id) {
           return { ...td, completed: !td.completed }
         }
-        return
+        return td
       })
     }
   }
