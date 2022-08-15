@@ -39,7 +39,6 @@ function reducer(state, action) { // what it takes as args
     // return { ...state, todos: state.todos.concat(newTodo), form: initialForm }
   }
   if (action.type === TOGGLE_DISPLAY_COMPLETEDS) {
-    debugger
     return { ...state, displayCompleteds: !state.displayCompleteds }
   }
   if (action.type === TOGGLE_COMPLETED) {
@@ -62,7 +61,6 @@ export default function App() {
     dispatch(action)
   }
   const toggleShouldShow = () => {
-    debugger
     const action = { type: TOGGLE_DISPLAY_COMPLETEDS }
     dispatch(action)
   }
