@@ -4,7 +4,6 @@
 
 - Node 16.x
 - NPM 8.x (update NPM executing `npm i -g npm`)
-- Postman (download the desktop version [here](https://www.postman.com/downloads/))
 - Chrome >= 100.x
 
 Other browser/Node/NPM configurations might work but haven't been tested.
