@@ -54,7 +54,7 @@ export default function App() {
 
   const onChange = ({ name, value }) => {
     debugger
-    const action = { type: CHANGE_INPUT, paylod: { name, value } }
+    const action = { type: CHANGE_INPUT, payload: { name, value } }
     dispatch(action)
   }
   const onSubmit = () => {
