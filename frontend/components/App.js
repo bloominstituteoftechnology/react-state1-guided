@@ -20,6 +20,9 @@ const initialState = { // the entire state of the app
   displayCompleteds: true,
 }
 
+// good names
+const TOGGLE_COMPLETED
+
 export default function App() {
   const [state, setState] = useState(initialState)
 
