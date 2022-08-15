@@ -43,9 +43,15 @@ function reducer(state, action) { // what it takes as args
   }
   if (action.type === TOGGLE_COMPLETED) {
     const id = action.payload
-    return { ...state, todos: state.todos.map(td => {
-      if ()
-    }) }
+    return {
+      ...state,
+      todos: state.todos.map(td => {
+        if (td.id === id) {
+          return
+        }
+        return
+      })
+    }
   }
   return state
 }
