@@ -1,4 +1,4 @@
-# Advanced State Management Guided Project PART 1
+# Advanced State Management - The Reducer Pattern
 
 ## Requirements
 
