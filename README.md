@@ -8,6 +8,12 @@
 
 Other browser/Node/NPM configurations might work but haven't been tested.
 
+## Scripts
+
+- `npm install`
+- `npm run dev`
+- `npm run ketchup`
+
 ## Set Up
 
 - Clone and `npm install`. DO NOT FORK! (Or the "ketchup" script won't work.)
