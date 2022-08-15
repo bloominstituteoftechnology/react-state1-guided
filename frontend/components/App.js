@@ -35,7 +35,7 @@ function reducer(state, action) { // what it takes as args
   }
   if (action.type === ADD_TODO) {
     debugger
-    // compute next state
+    
     return state
   }
   if (action.type === TOGGLE_DISPLAY_COMPLETEDS) {
