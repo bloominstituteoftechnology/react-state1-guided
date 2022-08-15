@@ -31,7 +31,7 @@ const TOGGLE_COMPLETED = 'TOGGLE_COMPLETED'
 function reducer(state, action) { // what it takes as args
   if (action.type === CHANGE_INPUT) {
     debugger
-    // compute next state
+    const { name, value } = action.payload
     return { ...state, form: { ...state.form, [] } }
   }
   if (action.type === ADD_TODO) {
