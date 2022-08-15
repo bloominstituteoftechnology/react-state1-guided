@@ -38,7 +38,7 @@ function reducer(state, action) { // what it takes as args
   if (action.type === TOGGLE_DISPLAY_COMPLETEDS) {
     return state
   }
-  if (action.type === CHANGE_INPUT) {
+  if (action.type === TOGGLE_COMPLETED) {
     return state
   }
   return state
