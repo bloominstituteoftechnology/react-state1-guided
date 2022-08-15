@@ -18,9 +18,9 @@ export default class Form extends React.Component {
       <form id="todoForm" onSubmit={this.onSubmit}>
         <input
           onChange={this.onChange}
-          value={values.name}
+          value={values.todoName}
           placeholder="Type todo"
-          name="name"
+          name="todoName"
           type="text"
         />
         <input type="submit" disabled={disabled} />

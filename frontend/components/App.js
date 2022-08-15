@@ -11,7 +11,8 @@ const initialTodos = [
   { id: getId(), name: "Have fun", completed: false },
 ]
 const initialForm = {
-  name: '',
+  todoName: '',
+  // assume there could be more inputs
 }
 const initialState = {
   form: initialForm,
@@ -23,7 +24,7 @@ export default function App() {
   const [state, setState] = useState(initialState)
 
   const onChange = ({ name, value }) => {
-    setState({ ...state, form: { [name]: value } })
+    setState({ ...state, form: { ...state.form, [name]: value } })
   }
   const onSubmit = () => {
     setState({
@@ -31,7 +32,7 @@ export default function App() {
       form: initialForm,
       todos: state.todos.concat({
         id: getId(),
-        name: state.form.name,
+        name: state.form.todoName,
         completed: false,
       }),
     })
@@ -63,8 +64,8 @@ export default function App() {
       <Form
         onSubmit={onSubmit}
         onChange={onChange}
-        disabled={!state.form.name.length}
         values={state.form}
+        disabled={!state.form.todoName.length}
       />
       <button onClick={toggleShouldShow}>
         {state.displayCompleteds ? 'Hide' : 'Show'} Completed
