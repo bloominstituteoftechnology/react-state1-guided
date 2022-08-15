@@ -34,7 +34,6 @@ function reducer(state, action) { // what it takes as args
     return { ...state, form: { ...state.form, [name]: value } }
   }
   if (action.type === ADD_TODO) {
-    debugger
     const newTodo = action.payload
     return { ...state, todos: [...state.todos, newTodo], form: initialForm }
     // return { ...state, todos: state.todos.concat(newTodo)
@@ -58,7 +57,6 @@ export default function App() {
     dispatch(action)
   }
   const onSubmit = () => {
-    debugger
     const newTodo = { id: getId(), completed: false, name: state.form.todoName }
     const action = { type: ADD_TODO, payload: newTodo }
     dispatch(action)
