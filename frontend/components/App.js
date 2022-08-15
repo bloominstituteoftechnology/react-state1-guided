@@ -52,7 +52,7 @@ export default function App() {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   const onChange = ({ name, value }) => {
-    
+    const action = { type: CHANGE_INPUT, paylod: }
   }
   const onSubmit = () => {
 
