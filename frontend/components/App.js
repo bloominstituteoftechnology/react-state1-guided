@@ -43,7 +43,7 @@ function reducer(state, action) { // what it takes as args
   }
   if (action.type === TOGGLE_COMPLETED) {
     const id = action.payload
-    return { ...state, todos: [] }
+    return { ...state, todos: [...state.todos] }
   }
   return state
 }
