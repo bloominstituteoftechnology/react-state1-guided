@@ -65,7 +65,8 @@ export default function App() {
     dispatch(action)
   }
   const toggleStatus = id => () => {
-    const action = { type: TOGGLE_COMPLETED}
+    const action = { type: TOGGLE_COMPLETED, payload: id }
+    debugger
   }
   return (
     <div>
