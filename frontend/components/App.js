@@ -42,8 +42,7 @@ function reducer(state, action) { // what it takes as args
     return { ...state, displayCompleteds: !state.displayCompleteds }
   }
   if (action.type === TOGGLE_COMPLETED) {
-    // compute next state
-    return state
+    const 
   }
   return state
 }
@@ -65,8 +64,9 @@ export default function App() {
     dispatch(action)
   }
   const toggleStatus = id => () => {
-    const action = { type: TOGGLE_COMPLETED, payload: id }
     debugger
+    const action = { type: TOGGLE_COMPLETED, payload: id }
+    dispatch(action)
   }
   return (
     <div>
