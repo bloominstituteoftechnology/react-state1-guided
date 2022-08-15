@@ -21,7 +21,8 @@ const initialState = { // the entire state of the app
 }
 
 // good names
-const TOGGLE_COMPLETED
+const TOGGLE_COMPLETED = 'TOGGLE_COMPLETED'
+const 
 
 export default function App() {
   const [state, setState] = useState(initialState)
