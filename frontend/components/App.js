@@ -29,8 +29,17 @@ const TOGGLE_COMPLETED = 'TOGGLE_COMPLETED'
 // STATE RECALCULATOR (reducer)
 // an action is an obj that describes the chance `{ type: 'CHANGE_INPUT', payload: { name, value } }`
 function reducer(state, action) { // what it takes as args
-  if (action.type === CHANGE) {
-
+  if (action.type === CHANGE_INPUT) {
+    return state
+  }
+  if (action.type === ADD_TODO) {
+    return state
+  }
+  if (action.type === TOGGLE_DISPLAY_COMPLETEDS) {
+    return state
+  }
+  if (action.type === CHANGE_INPUT) {
+    return state
   }
   return state
 }
