@@ -63,11 +63,12 @@ export default function App() {
       <Form
         onSubmit={onSubmit}
         onChange={onChange}
-        toggleShouldShow={toggleShouldShow}
-        displayCompleteds={state.displayCompleteds}
         disabled={!state.form.name.length}
         values={state.form}
       />
+      <button onClick={toggleShouldShow}>
+        {state.displayCompleteds ? 'Hide' : 'Show'} Completed
+      </button>
     </div>
   )
 }
