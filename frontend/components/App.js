@@ -56,7 +56,7 @@ export default function App() {
     dispatch(action)
   }
   const onSubmit = () => {
-    const newTodo = { id: getId(), completed: false,  name:  }
+    const newTodo = { id: getId(), completed: false, name: state.form.todoName }
   }
   const toggleShouldShow = () => {
 
