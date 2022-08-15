@@ -34,6 +34,7 @@ function reducer(state, action) { // what it takes as args
     return { ...state, form: { ...state.form, [name]: value } }
   }
   if (action.type === ADD_TODO) {
+    debugger
     // compute next state
     return state
   }
