@@ -47,7 +47,7 @@ function reducer(state, action) { // what it takes as args
       ...state,
       todos: state.todos.map(td => {
         if (td.id === id) {
-          return { ...td,  }
+          return { ...td, completed: !td.completed }
         }
         return
       })
