@@ -42,10 +42,12 @@ function reducer(state, action) { // what it takes as args
     return { ...state, displayCompleteds: !state.displayCompleteds }
   }
   if (action.type === TOGGLE_COMPLETED) {
+    debugger
     const id = action.payload
     return {
       ...state,
       todos: state.todos.map(td => {
+        debugger
         if (td.id === id) {
           return { ...td, completed: !td.completed }
         }
