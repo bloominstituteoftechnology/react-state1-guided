@@ -20,9 +20,9 @@ const initialState = { // the entire state of the app
   displayCompleteds: true,
 }
 
-// good names
+// TYPES of actions that can happen to our state
 const CHANGE_INPUT = 'CHANGE_INPUT'
-const ADD_TODO
+const ADD_TODO = 'ADD_TODO'
 const TOGGLE_DISPLAY_COMPLETEDS = 'TOGGLE_DISPLAY_COMPLETEDS'
 const TOGGLE_COMPLETED = 'TOGGLE_COMPLETED'
 
