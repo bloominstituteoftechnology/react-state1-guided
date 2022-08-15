@@ -21,7 +21,7 @@ const initialState = { // the entire state of the app
 }
 
 // good names
-const 
+const CHANGE_INPUT = 'CHANGE_INPUT'
 const TOGGLE_DISPLAY_COMPLETEDS = 'TOGGLE_DISPLAY_COMPLETEDS'
 const TOGGLE_COMPLETED = 'TOGGLE_COMPLETED'
 
