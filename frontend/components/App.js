@@ -14,7 +14,7 @@ const initialForm = {
   todoName: '',
   // assume there could be more inputs
 }
-const initialState = {
+const initialState = { // the entire state of the app
   form: initialForm,
   todos: initialTodos,
   displayCompleteds: true,
