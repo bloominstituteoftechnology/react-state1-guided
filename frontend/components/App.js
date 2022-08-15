@@ -26,6 +26,8 @@ const ADD_TODO = 'ADD_TODO'
 const TOGGLE_DISPLAY_COMPLETEDS = 'TOGGLE_DISPLAY_COMPLETEDS'
 const TOGGLE_COMPLETED = 'TOGGLE_COMPLETED'
 
+// STATE RECALCULATOR (reducer)
+
 
 export default function App() {
   const [state, setState] = useState(initialState)
