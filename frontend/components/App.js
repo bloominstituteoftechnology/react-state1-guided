@@ -49,7 +49,7 @@ function reducer(state, action) { // what it takes as args
 }
 
 export default function App() {
-  const [state, setState] = useState(initialState)
+  const [state, setState] = useReducer(reducer, initialState)
 
   const onChange = ({ name, value }) => {
 
