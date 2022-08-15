@@ -42,7 +42,8 @@ function reducer(state, action) { // what it takes as args
     return { ...state, displayCompleteds: !state.displayCompleteds }
   }
   if (action.type === TOGGLE_COMPLETED) {
-    const 
+    const id = action.payload
+    debugger
   }
   return state
 }
