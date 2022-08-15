@@ -36,7 +36,7 @@ function reducer(state, action) { // what it takes as args
   if (action.type === ADD_TODO) {
     debugger
     const newTodo = action.payload
-    return { ...state, todos: [...state.todos, newTodo] }
+    return { ...state, todos: [...state.todos, newTodo], form: initialForm }
     // return { ...state, todos: state.todos.concat(newTodo)
   }
   if (action.type === TOGGLE_DISPLAY_COMPLETEDS) {
