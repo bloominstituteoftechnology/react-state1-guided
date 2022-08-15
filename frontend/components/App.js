@@ -27,6 +27,7 @@ const TOGGLE_DISPLAY_COMPLETEDS = 'TOGGLE_DISPLAY_COMPLETEDS'
 const TOGGLE_COMPLETED = 'TOGGLE_COMPLETED'
 
 // STATE RECALCULATOR (reducer)
+// action is an obj that describes the chance { type: 'CHANGE_INPUT' }
 function reducer(state, action) { // what it takes as args
   // what it returns: the next state of the app
 }
